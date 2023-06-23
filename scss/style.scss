@@ -5,6 +5,16 @@
 }
 .layers{
 	height: 100vh;
+	display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+}
+.header-text{
+	text-transform: uppercase;
+	z-index: 2;
 }
 .layer {
 	width: 100%;
