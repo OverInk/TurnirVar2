@@ -1,5 +1,21 @@
 @import url(./nullstyle.scss);
 
+// или по-другому (впереди звездочка, перед скобкой)
+// {
+// 	margin: 0;
+// 	padding: 0;
+// 	box-sizing: border-box;
+// }
+
+@font-face {
+	font-family: raleway_n;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: raleway_n;
+	src: url(../fonts/raleway-black.woff2);
+	font-weight: 900;
+}
 .main-header{
 	position: relative;
 }
@@ -12,14 +28,15 @@
    position: relative;
    overflow: hidden;
 }
-.header-text{
+.layer__header-text{
 	text-transform: uppercase;
-	z-index: 2;
+	z-index: 10;
+	font-family: raleway_n, sans-serif;
 }
 .layer {
 	width: 100%;
 	height: 100%;
+	position: absolute;
 	background-size: cover;
 	background-position: center center;
-	position: absolute;
 }
