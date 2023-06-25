@@ -40,3 +40,19 @@
 	background-size: cover;
 	background-position: center center;
 }
+
+.layer__base{
+	transform: translate3d(0, calc(var(--scrollTop)/2), 0);
+}
+
+
+
+.main-article{
+	min-height: 100vh;
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
