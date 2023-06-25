@@ -1,4 +1,13 @@
-@import url(./nullstyle.scss);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
 @font-face {
   font-family: raleway_n;
   src: url(../fonts/raleway-regular.woff2);
@@ -8,6 +17,10 @@
   src: url(../fonts/raleway-black.woff2);
   font-weight: 900;
 }
+body {
+  background: #2756ca;
+}
+
 .main-header {
   position: relative;
 }
@@ -15,17 +28,29 @@
 .layers {
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   text-align: center;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .layer__header-text {
   text-transform: uppercase;
   z-index: 10;
   font-family: raleway_n, sans-serif;
+  transform: translate3d(0, calc(var(--scrollTop) / 4.5), 0);
+  color: #c9e4fc;
+  font-weight: 900;
+  font-size: calc(var(--index) * 2);
+  margin-bottom: calc(var(--index) * 4);
+  letter-spacing: calc(var(--index) / 2.25);
+  text-shadow: 0 0 10px #257da4;
+}
+
+.header-text__name {
+  font-size: calc(var(--index) * 0.9);
 }
 
 .layer {
@@ -37,7 +62,18 @@
 }
 
 .layer__base {
-  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 1.8), 0);
+  will-change: transform;
+}
+
+.layer__lvl1 {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.71), 0);
+  will-change: transform;
+}
+
+.layer__lvl2 {
+  transform: translate3d(0, calc(var(--scrollTop) / 2.9), 0);
+  will-change: transform;
 }
 
 .main-article {
@@ -47,5 +83,16 @@
   background-position: center center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.text-round {
+  color: #c6e4ff;
+  text-transform: uppercase;
+  font-family: raleway_n, sans-serif;
+  margin-top: calc(var(--index) * 1.5);
+  font-size: calc(var(--index) * 1.8);
+  letter-spacing: calc(var(--index) / 2.5);
+  transform: translate3d(0, calc(var(--scrollTop) / 7.5), 0);
+  font-weight: 600;
 }
