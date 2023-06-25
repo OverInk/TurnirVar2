@@ -64,13 +64,17 @@ body{
 }
 
 .layer__lvl1{
-	transform: translate3d(0, calc(var(--scrollTop)/1.71), 0);
+	transform: translate3d(0, calc(var(--scrollTop)/1.7), 0);
 	will-change: transform;
 }
 .layer__lvl2{
-	transform: translate3d(0, calc(var(--scrollTop)/2.9), 0);
+	transform: translate3d(0, calc(var(--scrollTop)/4.9), 0);
 	will-change: transform;
 	// z-index: 11;
+}
+.layer__lvl3{
+	transform: translate3d(0, calc(var(--scrollTop)/2.9), 0);
+	will-change: transform;
 }
 
 
