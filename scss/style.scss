@@ -131,7 +131,7 @@ body{
 	background-position: center center;
 	display: flex;
 	flex-direction: column;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
 }
 .text-round{
@@ -142,6 +142,7 @@ body{
    letter-spacing: calc(var(--index) / 2.5);
 	// transform: translate3d(0, calc(var(--scrollTop)/ 40.5), 0);
 	font-weight: 600;
+	text-align: center;
 }
 
 
@@ -180,6 +181,13 @@ body{
 		  display: flex;
 		  flex-direction: column;
 	  }
+	  &__circle{
+			width:calc(var(--index) * 13); 
+			height:calc(var(--index) * 13); 
+			border-radius: 50%;
+			box-shadow:1px 1px 0 #0c6180, 0 0 30px 5px #c0e8ff, inset 2px 2px 0 #d3fbff;
+			animation: glow 2s infinite ease
+	  }
 	  &__path2{
 		background: url(../img/trofei.png) center no-repeat;
 		  background-position: center center;
@@ -190,7 +198,6 @@ body{
 		  animation-duration: 20s;
 		  animation-iteration-count: infinite;
 		  animation-timing-function: linera;
-		  
 	  }
 	  
 	  &__path3-allteam {
@@ -217,6 +224,15 @@ body{
 		transform: rotate(360deg)
 	}
 }
+
+@keyframes glow {
+	0%,100% {
+		box-shadow: 1px 1px 0 #0c6180, 0 0 30px 5px #c0e8ff, inset 2px 2px 0 #d3fbff;
+	}
+	50% {
+		box-shadow: 1px 1px 0 #0c6180, 0 0 16px 10px #c0e8ff, inset 2px 2px 0 #d3fbff;
+	}
+}
 .path3-allteam{
   display: flex;
   margin-bottom: 10px;
@@ -225,19 +241,21 @@ body{
   display: flex;
 }
 .title-stage {
-  font-size: 16px;
+  font-size: calc(var(--index) * 0.75); 
   font-family: raleway_n, sans-serif;
   font-weight: 700;
   color: #FFF;
   
 }
 .team {
-  width: 126px;
-  height: 30px;
+  width: calc(var(--index) * 6); 
+  height: calc(var(--index) * 1.3); 
   background: #d1ffff;
-  margin: 18px 10px 0px 10px;
+//   margin: 18px 10px 0px 10px;
+
+  margin: calc(var(--index) * 0.8) calc(var(--index) * 0.6) 0px calc(var(--index) * 0.8);
   border-radius: 7px;
-  font-size: 16px;
+  font-size:calc(var(--index) * 0.65 ); 
   font-family: raleway_n, sans-serif;
   border: 1px solid #8da6e2;
   display: flex;
