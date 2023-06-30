@@ -195,7 +195,7 @@ body{
 	  
 	  &__path3-allteam {
 		  display: flex;
-		  flex-direction: column;
+		  flex-direction: row;
 			align-items: center;
 	  }
 	  &__path3-nextstage{
@@ -204,7 +204,11 @@ body{
 			align-items: center;
 	  }
 }
-
+.block3__together{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 @keyframes anime{
 	0% {
 		transform: rotate(0deg)
@@ -235,7 +239,7 @@ body{
   border-radius: 7px;
   font-size: 16px;
   font-family: raleway_n, sans-serif;
-  border: 1px solid #747171;
+  border: 1px solid #8da6e2;
   display: flex;
   align-items: center;
   justify-content: center;
