@@ -216,6 +216,9 @@ body{
 	flex-direction: column;
 	align-items: center;
 }
+.mar__bot{
+	margin-top: calc(var(--index) * 0.8);
+}
 @keyframes anime{
 	0% {
 		transform: rotate(0deg)
@@ -251,8 +254,6 @@ body{
   width: calc(var(--index) * 6); 
   height: calc(var(--index) * 1.3); 
   background: #d1ffff;
-//   margin: 18px 10px 0px 10px;
-
   margin: calc(var(--index) * 0.8) calc(var(--index) * 0.6) 0px calc(var(--index) * 0.8);
   border-radius: 7px;
   font-size:calc(var(--index) * 0.65 ); 
@@ -261,4 +262,23 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width:1050px) {
+	.layer__lvl3{
+		width: calc(var(--index) / 0.014);
+    	height: calc(var(--index) / 0.019);
+    	left: calc(var(--index) * 0.8);
+	}
+}
+@media screen and (max-width:780px) {
+	.block1{
+		flex-direction: column;
+	}
+	.block1__path1-all{
+		flex-direction: row;
+	}
+	.reverse__n{
+		flex-direction: row-reverse;
+	}
 }
