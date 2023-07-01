@@ -267,11 +267,13 @@ body{
 @media screen and (max-width:1050px) {
 	.layer__lvl3{
 		width: calc(var(--index) / 0.014);
-    	height: calc(var(--index) / 0.019);
-    	left: calc(var(--index) * 0.8);
+    	left: calc(var(--index) * 0.007);
 	}
 }
 @media screen and (max-width:780px) {
+	.layers{
+		align-items: center;
+	}
 	.block1{
 		flex-direction: column;
 	}
