@@ -1,5 +1,6 @@
 "use strict"
 
+
 document.querySelectorAll('.team').forEach(e => {
 	e.addEventListener("click", e => {
 		const listPlayer = e.currentTarget.dataset.path;
