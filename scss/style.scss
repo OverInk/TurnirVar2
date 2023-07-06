@@ -276,6 +276,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .text-style{
 	background: #96aef6;
@@ -362,7 +363,9 @@ body{
 .btn-cancel{
 	border-radius: 10px;
 	background:rgb(168 198 215);
-	padding: calc(var(--index) * 0.5)
+	padding: calc(var(--index) * 0.3);
+	cursor: pointer;
+	font-size: calc(var(--index) * 0.7);
 }
 .wrapper{
 	inset: 0px;
@@ -400,7 +403,8 @@ body{
 }
 @media screen and (max-width:560px) {
 	.js__button {
-    left: 34%;
-	  top: 29%;
+    	left: 34%;
+	  	top: 29%;
+	  	height: calc(var(--index) * 26);
 	}
 }
