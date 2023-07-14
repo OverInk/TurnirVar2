@@ -145,6 +145,18 @@ body{
    justify-content: space-around;
    align-items: center;
 }
+.main-article::after{
+	content: '';
+	position: absolute;
+	z-index: 20;
+	width: 100%;
+	height: calc(var(--index) * 17);
+	background-image: url(../img/nextporog.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	bottom: calc(var(--index) * -10);
+}
 
 .content{
 	will-change: transform;
@@ -288,6 +300,18 @@ body{
    color: #c9e4fc;
    font-weight: 600;
  	margin-top: calc(var(--index) * 0.5);
+}
+
+.second-article{
+	min-height: 100vh;
+	position: relative;
+	background-image: url(../img/icecastle.png);
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
 }
 
 //Js кнопка
