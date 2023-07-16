@@ -154,7 +154,7 @@ body{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	bottom: calc(var(--index) * -8.1);
+	bottom: calc(var(--index) * -8.3);
 }
 
 .content{
@@ -169,7 +169,7 @@ body{
 	// transform: translate3d(0, calc(var(--scrollTop)/ 40.5), 0);
 	font-weight: 600;
 	text-align: center;
-	transform: translateY(calc(var(--index) * 4.2));
+	transform: translateY(calc(var(--index) * 2.3));
 }
 
 
