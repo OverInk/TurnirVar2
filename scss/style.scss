@@ -1,4 +1,3 @@
-
 *{
 	margin: 0;
 	padding: 0;
@@ -145,18 +144,18 @@ body{
    justify-content: space-around;
    align-items: center;
 }
-.main-article::after{
-	content: '';
-	position: absolute;
-	z-index: 20;
-	width: 100%;
-	height: calc(var(--index) * 17);
-	background-image: url(../img/nextporog.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	bottom: calc(var(--index) * -10);
-}
+// .main-article::after{
+// 	content: '';
+// 	position: absolute;
+// 	z-index: 20;
+// 	width: 100%;
+// 	height: calc(var(--index) * 17);
+// 	background-image: url(../img/nextporog.png);
+// 	background-size: cover;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	bottom: calc(var(--index) * -10);
+// }
 
 .content{
 	will-change: transform;
@@ -314,7 +313,7 @@ body{
    align-items: center;
 }
 
-//Js кнопка
+//Js кнопка ----------------------------------------------------------------
 .js__button{
 	position: absolute;
    top: 27%;
@@ -391,13 +390,36 @@ body{
 	cursor: pointer;
 	font-size: calc(var(--index) * 0.7);
 }
-.wrapper{
-	inset: 0px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+// Вторая стадия и его классы-------------------------------------------
+table{
+	border-spacing: calc(var(--index) * 2) calc(var(--index) * 1);
+	font-family: raleway_n, sans-serif;
+	font-size: calc(var(--index) * 1.3);
+	font-weight: 500;
+	background: #c2e2ff91;
+   border-radius: 20px;
 }
+
+.table-nameteam{
+	padding: calc(var(--index) * 0.5);
+	color: #071433;
+}
+.table-element{
+	padding: 10px;
+	background: black;
+}
+.table-imag{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.table-text{
+	font-weight: 400;
+	color:white;
+}
+
+
+
 @media screen and (max-width:1050px) {
 	.layer__lvl3{
 		width: calc(var(--index) / 0.014);
