@@ -144,18 +144,18 @@ body{
    justify-content: space-around;
    align-items: center;
 }
-// .main-article::after{
-// 	content: '';
-// 	position: absolute;
-// 	z-index: 20;
-// 	width: 100%;
-// 	height: calc(var(--index) * 17);
-// 	background-image: url(../img/nextporog.png);
-// 	background-size: cover;
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	bottom: calc(var(--index) * -10);
-// }
+.main-article::after{
+	content: '';
+	position: absolute;
+	z-index: 20;
+	width: 100%;
+	height: calc(var(--index) * 14);
+	background-image: url(../img/nextporog.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	bottom: calc(var(--index) * -8.1);
+}
 
 .content{
 	will-change: transform;
@@ -169,6 +169,7 @@ body{
 	// transform: translate3d(0, calc(var(--scrollTop)/ 40.5), 0);
 	font-weight: 600;
 	text-align: center;
+	transform: translateY(calc(var(--index) * 4.2));
 }
 
 
