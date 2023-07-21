@@ -392,36 +392,18 @@ body{
 	font-size: calc(var(--index) * 0.7);
 }
 // Вторая стадия и его классы-------------------------------------------
-// table{
-// 	border-spacing: calc(var(--index) * 2) calc(var(--index) * 1);
-// 	font-family: raleway_n, sans-serif;
-// 	font-size: calc(var(--index) * 1.3);
-// 	font-weight: 500;
-// 	background: #c2e2ff91;
-//    border-radius: 20px;
-// }
-
-// .table-nameteam{
-// 	padding: calc(var(--index) * 0.5);
-// 	color: #071433;
-// }
-// .table-element{
-// 	padding: 10px;
-// 	background: black;
-// }
-// .table-imag{
-// 	background-repeat: no-repeat;
-// 	background-position: center center;
-// 	background-size: cover;
-// }
-// .table-text{
-// 	font-weight: 400;
-// 	color:white;
-// }
 .global__table{
+	display: grid;
+	grid-template-rows: repeat(11, calc(var(--index) *  2.7));
+	grid-template-columns: repeat(11, calc(var(--index) *  3.7));
+	gap: calc(var(--index) * 0.35);
+}
+.space__place{
+	grid-column: 1 / span 1;
+	grid-row: 1;
 }
 .global__box{
-	padding: calc(var(--index) * 0.4 );
+	padding: calc(var(--index) * 0.3 );
 	transition: all 0.5s cubic-bezier(1, 0.12, 0.55, 2.24);
 	background: skyblue;
 }
@@ -431,21 +413,23 @@ body{
 	justify-content: center;
 	align-items: center;
 	transition: inherit;
-	padding: calc(var(--index) * 1 );
+	padding: calc(var(--index) * 0.3);
 	background: #102355;
 }
 .logo-team{
-	height: 60px;
-	width: 40px;
+	height: calc(var(--index) * 1.5);
+    width: calc(var(--index) * 2.5);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .name-team{
+	display: none;
 	font-weight: 500;
    font-family: raleway_n, sans-serif;
    font-size: calc(var(--index) * 0.8);
    padding: calc(var(--index) * 0.4) 0;
+	text-align: center;
 }
 .result{
 	display: none;
@@ -468,7 +452,10 @@ body{
 .every__team:hover .result {
 	display: flex;
 	flex-direction: row;
-	transform: scale(1.12);
+	transform: scale(1.5);
+}
+.every__team:hover .name-team{
+	display: block;
 }
 
 
