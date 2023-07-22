@@ -394,7 +394,7 @@ body{
 // Вторая стадия и его классы-------------------------------------------
 .global__table{
 	display: grid;
-	grid-template-rows: repeat(11, calc(var(--index) *  2.7));
+	grid-template-rows: repeat(11, calc(var(--index) *  2.6));
 	grid-template-columns: repeat(11, calc(var(--index) *  3.7));
 	gap: calc(var(--index) * 0.35);
 }
@@ -406,6 +406,20 @@ body{
 	padding: calc(var(--index) * 0.3 );
 	transition: all 0.5s cubic-bezier(1, 0.12, 0.55, 2.24);
 	background: skyblue;
+}
+.global__box-fornt{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #102355;
+	border-radius: 5px;
+	height: calc(var(--index) * 2);
+}
+.text-nt{
+	font-family: raleway_n, sans-serif;
+	font-size: calc(var(--index) * 1);
+	color: #8da6e2;
+	font-weight: 400;
 }
 .every__team{
 	display: flex;
@@ -430,6 +444,7 @@ body{
    font-size: calc(var(--index) * 0.8);
    padding: calc(var(--index) * 0.4) 0;
 	text-align: center;
+	color: #8da6e2;
 }
 .result{
 	display: none;
