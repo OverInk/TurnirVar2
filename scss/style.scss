@@ -414,9 +414,9 @@ body{
 	border-radius: 5px;
 	height: calc(var(--index) * 2);
 }
-// .two-round{
-// 	transform: translateY(calc(var(--index) * -1));
-// }
+.two-round{
+	transform: translateY(calc(var(--index) * -1));
+}
 .text-nt{
 	font-family: raleway_n, sans-serif;
 	font-size: calc(var(--index) * 1);
@@ -510,6 +510,18 @@ body{
 	}
 	.reverse__n{
 		flex-direction: row-reverse;
+	}
+	.global__table{
+		grid-template-rows: repeat(11, calc(var(--index) * 3));
+    	grid-template-columns: repeat(11, calc(var(--index) * 2.6));
+	}
+	.krestik{
+		height: calc(var(--index) * 3);
+    	width: calc(var(--index) * 2.6);
+	}
+	.logo-team{
+		height: calc(var(--index) * 2.3);
+    	width: calc(var(--index) * 2.1);
 	}
 }
 @media screen and (max-width:560px) {
