@@ -483,7 +483,13 @@ body{
 	display: block;
 }
 
-
+// .podval{
+// 	font-size: calc(var(--index) * 0.7);
+// 	font-family: raleway_n, sans-serif;
+//    color: #90bfe9;
+//    font-weight: 500;
+// 	transform: translateY(calc(var(--index) * 1));
+// }
 
 @media screen and (max-width:1050px) {
 	.layer__lvl3{
