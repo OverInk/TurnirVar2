@@ -438,13 +438,13 @@ body{
 	align-items: center;
 	transition: inherit;
 }
-// .logo-team{
-// 	height: calc(var(--index) * 1.5);
-//     width: calc(var(--index) * 2.5);
-// 	background-repeat: no-repeat;
-// 	background-position: center;
-// 	background-size: cover;
-// }
+.logo-team{
+	height: calc(var(--index) * 1.5);
+    width: calc(var(--index) * 2.5);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 .name-team{
 	display: none;
 	font-weight: 500;
@@ -469,19 +469,19 @@ body{
 	font-size: calc(var(--index) * 0.5);
 	font-weight: 400;
 }
-// .every__team:hover {
-// 	transform: scale(1.3);
-// 	padding: calc(var(--index) * 0.4);
-// 	background: #102355;
-// }
-// .every__team:hover .result {
-// 	display: flex;
-// 	flex-direction: row;
-// 	transform: scale(1.5);
-// }
-// .every__team:hover .name-team{
-// 	display: block;
-// }
+.every__team:hover {
+	transform: scale(1.3);
+	padding: calc(var(--index) * 0.4);
+	background: #102355;
+}
+.every__team:hover .result {
+	display: flex;
+	flex-direction: row;
+	transform: scale(1.5);
+}
+.every__team:hover .name-team{
+	display: block;
+}
 
 .podval{
 	font-size: calc(var(--index) * 0.7);
