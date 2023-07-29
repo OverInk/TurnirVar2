@@ -526,10 +526,10 @@ body{
 		height: calc(var(--index) * 3);
     	width: calc(var(--index) * 2.6);
 	}
-	// .logo-team{
-	// 	height: calc(var(--index) * 2.3);
-   //  	width: calc(var(--index) * 2.1);
-	// }
+	.logo-team{
+		height: calc(var(--index) * 2.3);
+    	width: calc(var(--index) * 2);
+	}
 }
 @media screen and (max-width:560px) {
 	.js__button {
