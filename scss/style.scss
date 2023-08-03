@@ -479,14 +479,14 @@ body{
 	font-weight: 400;
 }
 .every__team:hover {
-	transform: scale(1.5);
+	transform: scale(1.3);
 	padding: calc(var(--index) * 0.4);
 	background: #102355;
 }
 .every__team:hover .result {
 	display: flex;
 	flex-direction: row;
-	transform: scale(1.5);
+	transform: scale(1.3);
 }
 .every__team:hover .name-team{
 	display: block;
